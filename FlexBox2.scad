@@ -179,7 +179,7 @@ module boxPart2D(height, width, depth, thickness, cornerRadius, tabsOut)
       {
         livingHinge2D(hingeLength1, height, thickness);
   
-        translate([0,(hingeLength1 + faceWidth2)/2,0])
+        translate([0,hingeLength1/2 + faceWidth1/4,0])
           tabPanel(height, faceWidth1/2, thickness, tabLength, tabsOut);
       }
     }
